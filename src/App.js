@@ -8,10 +8,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/my-article.html" element={<Myarticle />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/admin/comments" element={<EditComments />} />
-        <Route path="/admin/comments/edit" element={<Editpage />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/comments" element={<EditComments />} />
+        <Route path="/comments/edit" element={<Editpage />} />
+        <Route path="/my-article" element={<Myarticle />} />
       </Routes>
     </BrowserRouter>
   );
